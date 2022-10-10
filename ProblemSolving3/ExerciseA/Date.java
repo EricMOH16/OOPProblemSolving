@@ -51,6 +51,14 @@ public class Date {
     }
 
     public String toString(){
+       return getDay() + "-" + getMonth() + "-" + getYear();
+    }
 
+    public boolean equals(Date date){
+
+       if( this.day == date.day && this.month == date.month && this.year == date.year) //could use one line return
+           return true;
+       else
+           return false;
     }
 }
